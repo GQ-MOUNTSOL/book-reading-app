@@ -1,0 +1,29 @@
+{
+  "name": "book-reading-app",
+  "version": "1.0.0",
+  "description": "A motivational and confidence-building book reading application.",
+  "main": "src/app.ts",
+  "scripts": {
+    "start": "ts-node src/app.ts",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.0"
+  },
+  "devDependencies": {
+    "@types/ejs": "^3.1.5",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^27.0.1",
+    "@types/mongoose": "^5.11.96",
+    "copyfiles": "^2.4.1",
+    "jest": "^27.0.6",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.9.5"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}

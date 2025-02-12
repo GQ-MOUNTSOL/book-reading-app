@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Reading App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Book Reading App</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/books">My Books</a></li>
+        <li><a href="/recommendations">Recommendations</a></li>
+        <li><a href="#add-book">Add a Book</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <h2>Your Journey to Motivation</h2>
+      <p>Discover books that inspire confidence and motivate you to achieve your goals.</p>
+    </section>
+    <section id="add-book">
+      <h2>Add a New Book</h2>
+      <form action="/api/books" method="post">
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" required>
+  
+        <label for="author">Author:</label>
+        <input type="text" name="author" id="author" required>
+  
+        <label for="genre">Genre:</label>
+        <input type="text" name="genre" id="genre" required>
+  
+        <label for="description">Description:</label>
+        <textarea name="description" id="description"></textarea>
+  
+        <button type="submit">Add Book</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

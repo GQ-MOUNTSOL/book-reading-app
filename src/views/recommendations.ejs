@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recommendations - Book Reading App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Book Recommendations</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/books">My Books</a></li>
+        <li><a href="/recommendations">Recommendations</a></li>
+        <li><a href="/">Add a Book</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="recommendations">
+      <h2>Motivational Books</h2>
+      <ul id="recommendation-list">
+        <% recommendations.forEach(function(book) { %>
+          <li>
+            <h3><%= book.title %></h3>
+            <p><strong>Author:</strong> <%= book.author %></p>
+            <p><strong>Description:</strong> <%= book.description %></p>
+          </li>
+        <% }); %>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

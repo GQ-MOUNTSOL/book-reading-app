@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Reading App</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Book Reading App</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#my-books">My Books</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+                <li><a href="#add-book">Add a Book</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Your Journey to Motivation</h2>
+            <p>Discover books that inspire confidence and motivate you to achieve your goals.</p>
+        </section>
+        <section id="my-books">
+            <h2>My Reading List</h2>
+            <ul id="book-list">
+                <!-- Dynamically populated book list -->
+            </ul>
+        </section>
+        <section id="recommendations">
+            <h2>Recommended Books</h2>
+            <ul id="recommendation-list">
+                <!-- Dynamically populated recommendations -->
+            </ul>
+        </section>
+        <section id="add-book">
+            <h2>Add a New Book</h2>
+            <form id="book-form">
+                <input type="text" id="title" placeholder="Book Title" required>
+                <input type="text" id="author" placeholder="Author" required>
+                <input type="text" id="genre" placeholder="Genre" required>
+                <textarea id="description" placeholder="Description" required></textarea>
+                <button type="submit">Add Book</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Book Reading App. All rights reserved.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
